@@ -1,0 +1,26 @@
+<!-- <header class="flex">
+  <img alt="Nx logo" width="75" src="https://nx.dev/assets/images/nx-logo-white.svg" />
+  <h1>Welcome to {{ title }}!</h1>
+</header> 
+<button  (click)="init()">get data</button> <br/>
+
+<button   (click)="signup()">signup</button>  <br/>
+
+<button    (click)="signin()">signin</button>  <br/>
+
+
+<div *ngIf="data">{{data | json}}</div> -->
+
+
+
+<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="user">
+  <div class="navbar-nav">
+     <a class="nav-item nav-link" (click)="logout()">Logout</a>
+  </div>
+</nav>
+
+<!-- main app container -->
+<div class="app-container" [ngClass]="{ 'bg-light': user }">   
+  <router-outlet></router-outlet>
+</div>
