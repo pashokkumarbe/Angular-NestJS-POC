@@ -47,6 +47,8 @@
     "@nestjs/mongoose": "^7.2.4",
     "@nestjs/ng-universal": "^4.2.0",
     "@nestjs/platform-express": "^7.0.0",
+    "@ng-idle/core": "^11.1.0",
+    "@ng-idle/keepalive": "^11.0.3",
     "@nguniversal/express-engine": "^11.1.0",
     "@nrwl/angular": "11.1.5",
     "@types/mongoose": "^5.11.97",
