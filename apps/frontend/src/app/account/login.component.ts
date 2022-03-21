@@ -51,7 +51,7 @@ export class LoginComponent implements OnInit {
                 alert('Invalid Email Id or Password');
                 return;
             }  
-            localStorage.setItem('user', JSON.stringify(data)); 
+            sessionStorage.setItem('user', JSON.stringify(data)); 
             this.router.navigateByUrl('/');
             this.accountService.setUserData(data);
             this.loading = false;

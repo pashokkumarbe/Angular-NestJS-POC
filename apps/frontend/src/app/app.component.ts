@@ -50,7 +50,7 @@ export class AppComponent {
 
     this.timeoutreset();
 
-    const userdata =  localStorage.getItem('user');
+    const userdata =  sessionStorage.getItem('user');
     if(userdata) {
       try{
         this.user = JSON.parse(userdata);
